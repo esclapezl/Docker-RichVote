@@ -13,18 +13,20 @@ Veuillez retrouver la première installation sur ce dépôt : https://github.com
 
 <br>
 
-# Configurations & Concepts utilisés
+# Mise en application des différents concepts
 
 Au niveau des différentes configurations, nous allons installer les conteneurs suivants : Apache, Nginx, Serveur de base de données PostgreSQL ainsi qu’un Pgadmin. 
-Cependant pour installer ceux-ci nous allons mettre en application les notions : compose, network, volume et build.
 
 <br>
 
-## 1. Notion de Network :
+## 1. Débutons par le résultat
 
 
-### I/Bridge
 
-Créer un conteneur nginx en mode “bridge” :
-<code>docker run -dp 80:80 -- network bridge nginx</code>
-Vous pouvez aussi utiliser : docker run -dp 81:80 nginx car le mode bridge est le mode de réseau par défaut de Docker.
+## 2. Différents fichiers utilisés
+
+
+### <code>docker-compose.yml</code>
+
+### <code>Dockerfile</code>
+
