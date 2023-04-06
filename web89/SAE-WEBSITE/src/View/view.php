@@ -40,22 +40,22 @@ use App\Lib\ConnexionUtilisateur;
             <nav>
                 <div class="navBar">
 
-                <a href="frontController.php?controller=user&action=accueil"><img src="../assets/img/logo.png" alt="RichVote" id="logo"></a>
+                <a href="index.php?controller=user&action=accueil"><img src="../assets/img/logo.png" alt="RichVote" id="logo"></a>
 
                 <ul>
-                    <li><a href="frontController.php?controller=question&action=readAll">Questions</a></li>
-                    <li><a href="frontController.php?controller=question&action=readAllArchives">Archives</a></li>
-                    <li><a href="frontController.php?controller=user&action=readAll">Contributeurs</a></li>
+                    <li><a href="index.php?controller=question&action=readAll">Questions</a></li>
+                    <li><a href="index.php?controller=question&action=readAllArchives">Archives</a></li>
+                    <li><a href="index.php?controller=user&action=readAll">Contributeurs</a></li>
                 </ul>
 
 
                     <?php
                     if((new ConnexionUtilisateur())->estConnecte()) {
-                        echo  '<div class="ligneAlign"><a id="btn-connexion" href="frontController.php?controller=user&action=read&id='.(new ConnexionUtilisateur())->getLoginUtilisateurConnecte() .'">'. (new ConnexionUtilisateur())->getLoginUtilisateurConnecte().' </a>
-                                <a id="btn-connexion" href="frontController.php?controller=user&action=deconnexion">Déconnexion </a></div>';
+                        echo  '<div class="ligneAlign"><a id="btn-connexion" href="index.php?controller=user&action=read&id='.(new ConnexionUtilisateur())->getLoginUtilisateurConnecte() .'">'. (new ConnexionUtilisateur())->getLoginUtilisateurConnecte().' </a>
+                                <a id="btn-connexion" href="index.php?controller=user&action=deconnexion">Déconnexion </a></div>';
 
                     }
-                    else {echo  '<a id="btn-connexion" href="frontController.php?controller=user&action=connexion">Connexion </a>';}
+                    else {echo  '<a id="btn-connexion" href="index.php?controller=user&action=connexion">Connexion </a>';}
                     ?>
 
                     <div class="btn">
@@ -100,10 +100,10 @@ use App\Lib\ConnexionUtilisateur;
 
             </div>
             <ul>
-                <li><a href="frontController.php?controller=user&action=accueil">Accueil</a></li>
-                <li><a href="frontController.php?controller=question&action=readAll">Questions</a></li>
-                <li><a href="frontController.php?controller=question&action=readAllArchives">Archives</a></li>
-                <li><a href="frontController.php?controller=user&action=readAll">Contributeurs</a></li>
+                <li><a href="index.php?controller=user&action=accueil">Accueil</a></li>
+                <li><a href="index.php?controller=question&action=readAll">Questions</a></li>
+                <li><a href="index.php?controller=question&action=readAllArchives">Archives</a></li>
+                <li><a href="index.php?controller=user&action=readAll">Contributeurs</a></li>
             </ul>
 
             <p>Copyright &copy; RichVote | Tous droits réservés</p>
