@@ -30,6 +30,7 @@ Au niveau des différentes configurations, nous allons installer les conteneurs 
 
 ### <code>docker-compose.yml</code>
 
+<pre><code>
 ```
 version: "3.8"
 
@@ -85,9 +86,11 @@ services:
   #     - 90:80
 
 ```
+</pre></code>
 
 ### <code>Dockerfile</code>
 
+<pre><code>
 ```
 FROM php:8.2-apache
 
@@ -114,6 +117,7 @@ RUN apt-get install -y wget
 RUN docker-php-ext-install pdo_mysql 
 RUN apt-get install -y zip
 ```
+</pre></code>
 
 ## 3. Lancement du conteneur
 ![3Capture](https://user-images.githubusercontent.com/120033089/230332375-8019288a-4fe9-425c-b7da-2660bf6fc8ff.PNG)
