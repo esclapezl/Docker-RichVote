@@ -114,3 +114,8 @@ RUN apt-get install -y wget
 RUN docker-php-ext-install pdo_mysql 
 RUN apt-get install -y zip
 ```
+
+## 3. Lancement du conteneur
+![3Capture](https://user-images.githubusercontent.com/120033089/230332375-8019288a-4fe9-425c-b7da-2660bf6fc8ff.PNG)
+
+
