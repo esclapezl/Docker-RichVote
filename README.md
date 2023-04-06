@@ -31,7 +31,6 @@ Au niveau des différentes configurations, nous allons installer les conteneurs 
 ### <code>docker-compose.yml</code>
 
 <pre><code>
-```
 version: "3.8"
 
 services:
@@ -85,13 +84,11 @@ services:
   #   ports:
   #     - 90:80
 
-```
 </pre></code>
 
 ### <code>Dockerfile</code>
 
 <pre><code>
-```
 FROM php:8.2-apache
 
 # Installe Composer
@@ -116,7 +113,6 @@ RUN git config --global user.name "odilonv"
 RUN apt-get install -y wget 
 RUN docker-php-ext-install pdo_mysql 
 RUN apt-get install -y zip
-```
 </pre></code>
 
 ## 3. Lancement du conteneur
